@@ -13,7 +13,7 @@
 
 ### 🏠 [Homepage](https://github.com/itsfadnis/jsonpath-visualizer#readme)
 
-### ✨ [Demo](https://demo.com)
+### ✨ [Demo](https://vigorous-euler-fd1608.netlify.app/)
 
 ## Install
 
