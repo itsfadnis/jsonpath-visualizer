@@ -7,6 +7,7 @@ export type NodeStyle = {
   [key: string]: string;
 };
 
+// react-json-tree emits key paths from leaf to root node, hence the reversal
 const getNodePath = (keyPath: JSONPath): JSONPath => {
   const path = [...keyPath];
   path.reverse();
@@ -44,7 +45,7 @@ export const getNodeStyle = (
     style: {
       ...style,
       fontWeight: 'bold',
-      fontSize: '1rem',
+      fontSize: '1.1em',
     },
   };
 };
