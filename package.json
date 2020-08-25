@@ -1,7 +1,7 @@
 {
   "name": "jsonpath-visualizer",
   "version": "1.0.0",
-  "description": "Visualize json with jsonpath querying",
+  "description": "Visualize JSON with JSONPath querying",
   "main": "index.js",
   "repository": "https://github.com/itsfadnis/jsonpath-visualizer",
   "author": "itsfadnis <nik.fadnis@gmail.com>",
