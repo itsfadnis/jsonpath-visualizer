@@ -9,8 +9,7 @@ const useStyles = makeStyles((theme: Theme) => {
       padding: theme.spacing(2),
     },
     header: {
-      display: 'flex',
-      justifyContent: 'space-between',
+      marginBottom: theme.spacing(2),
     },
   });
 });

@@ -11,6 +11,8 @@ import {
 import { useSelector } from 'react-redux';
 import { RootState } from './rootReducer';
 
+const COLLECTION_LIMIT = 30;
+
 const JSONTreeView: React.FC = () => {
   const json = useSelector((state: RootState) => state.json.data);
   const jsonPaths = useSelector((state: RootState) => state.json.paths);
@@ -37,7 +39,7 @@ const JSONTreeView: React.FC = () => {
       data={json}
       theme={base16Theme}
       keyPath={['$']}
-      collectionLimit={20}
+      collectionLimit={COLLECTION_LIMIT}
       shouldExpandNode={(keyPath) => shouldExpandNode(keyPath, jsonPaths)}
       // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore

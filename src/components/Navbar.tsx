@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
           </Typography>
           <IconButton
             component="a"
-            href="https://github.com/itsfadnis"
+            href="https://github.com/itsfadnis/jsonpath-visualizer"
             edge="start"
             color="inherit"
             aria-label="GitHub repository"
@@ -50,4 +50,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default React.memo(Navbar);
+export default Navbar;
