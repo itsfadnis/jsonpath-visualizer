@@ -22,12 +22,15 @@
 ## Implementation
 - Built with TypeScript, React.js with Redux state management
 - Tree rendering done using [react-json-tree](https://github.com/itsfadnis/react-json-tree). A fork of the react tree component used by redux-devtools(https://github.com/reduxjs/redux-devtools/blob/master/packages/)
-- Progressive rendering, to handle large JSON.  Nodes are rendered upto a limit, while the rest of the nodes are rendered as node ranges. Matching nodes are highlighted and expanded. Matching node-ranges are highlighted and expandable. The idea is to highlight matching nodes/node paths, without having to render way too many nodes.
+- Progressive rendering, to handle large JSON.  Nodes are rendered upto a limit, while the rest of the nodes are rendered as node ranges. Matching nodes are highlighted and expanded. Matching node-ranges are highlighted and expandable. The idea is to highlight matching nodes/node paths, without having to render way too many nodes. Thresholds:
+  - Collection limit: 30 (The number of nodes that will be rendered in a collection before rendering them in collapsed ranges)
+  - Query limit: 5000 (A maximum of 5000 matching nodes will be returned per query)
 - JSON files are read using the [FileReader API](https://developer.mozilla.org/en-US/docs/Web/API/FileReader)
 
-## Further optimization?
+## Further improvements?
 - JSON streaming for huge files that can't be read/parsed in-memory
 - Introduce a service worker to handle querying, so as to keep the main thread responsive in case the computation is super expensive
+- Tests!
 - I'm sure there could be lots more...
 
 ## Install
