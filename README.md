@@ -11,8 +11,6 @@
 
 > Visualize json with jsonpath querying
 
-### 🏠 [Homepage](https://github.com/itsfadnis/jsonpath-visualizer#readme)
-
 ### ✨ [Demo](https://vigorous-euler-fd1608.netlify.app/)
 
 ## Install
